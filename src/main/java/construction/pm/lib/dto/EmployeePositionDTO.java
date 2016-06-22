@@ -49,4 +49,11 @@ public class EmployeePositionDTO implements Serializable {
         this.employeeCollection = employeeCollection;
     }
 
+    @Override
+    public String toString() {
+        return position;
+    }
+    
+    
+
 }

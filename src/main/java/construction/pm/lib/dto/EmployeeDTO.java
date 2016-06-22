@@ -16,6 +16,16 @@ public class EmployeeDTO implements Serializable {
 
     private String lastName;
 
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
     private Collection<ProjectDTO> projectCollection;
 
     private Collection<DrawingDTO> drawingCollection;

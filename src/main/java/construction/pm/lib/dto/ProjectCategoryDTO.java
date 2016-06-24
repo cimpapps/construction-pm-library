@@ -46,5 +46,5 @@ public class ProjectCategoryDTO implements Serializable {
     public void setProjectCollection(Collection<ProjectDTO> projectCollection) {
         this.projectCollection = projectCollection;
     }
-
+    
 }

@@ -50,5 +50,10 @@ public class ProjectLayerDTO implements Serializable {
         this.projectsId = projectsId;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
 
+    
 }

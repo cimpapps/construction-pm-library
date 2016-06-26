@@ -5,6 +5,7 @@
  */
 package construction.pm.lib.rmi;
 
+import construction.pm.lib.dto.ProjectDTO;
 import construction.pm.lib.dto.ProjectLayerDTO;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -18,4 +19,5 @@ public interface AbstractLayersRemote extends Remote {
     
     public boolean addLayer(ProjectLayerDTO layer) throws RemoteException;
     public List<ProjectLayerDTO> getAllLayers() throws RemoteException; 
+    public List<ProjectLayerDTO> getProjectLayers(ProjectDTO projectDto) throws RemoteException;
 }

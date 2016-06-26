@@ -67,6 +67,12 @@ public class ProjectDTO implements Serializable {
         this.projectLayerCollection = projectLayerCollection;
     }
 
+    @Override
+    public String toString() {
+        return getName();
+    }
+
+    
 
 
 }

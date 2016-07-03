@@ -1,6 +1,7 @@
 
 package construction.pm.lib.rmi;
 
+import construction.pm.lib.dto.EmployeeDTO;
 import construction.pm.lib.dto.ProjectDTO;
 import construction.pm.lib.dto.ProjectLayerDTO;
 import java.rmi.Remote;
@@ -15,6 +16,5 @@ public interface AbstractProjectRemote extends Remote {
     
     public ProjectDTO addProject(ProjectDTO projectDto) throws RemoteException;
     public List<ProjectDTO> getAllProjects() throws RemoteException;
-    
-    
+    public boolean assignEmployeeToProject(ProjectDTO projectDTO, EmployeeDTO employeeDTO) throws RemoteException;
 }
